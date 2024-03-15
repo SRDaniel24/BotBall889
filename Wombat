@@ -1,0 +1,86 @@
+#include <kipr/wombat.h>
+
+int main()
+{
+
+    printf("Hello World\n");
+    motor(0,80);
+    motor(3,85);
+    msleep(2000);//drive foward
+  
+    motor(0,70);
+    motor(3,86);
+    msleep(2200);//turn slightly
+
+    motor(0,72);
+    motor(3,80);
+    msleep(3400);
+  
+    motor(0,85);
+    motor(3,70);
+    msleep(6000);//push rocks into rock heap
+  
+    motor(0,-10);
+    motor(3,-72);
+    msleep(3200);//back up from rock heap
+  
+    motor(0,70);
+    motor(3,77);
+    msleep(2000);//turn toward orange poms
+  
+    motor(0,70);
+    motor(3,74);
+    msleep(2000);
+  
+    motor(0,40);
+    motor(3,86);
+    msleep(1200);//move toward tower with orange poms in claw
+  
+    motor(0,70);
+    motor(3,74);
+    msleep(1000);
+  
+    ao();
+    msleep(8000);//Wait for Create to pass
+  
+    motor(0,-64);
+    motor(3,-100);
+    msleep(1800);//Back up from orange poms
+  
+    motor(0,80);
+    motor(3,64);
+    msleep(2000);
+  
+    motor(0,80);
+    motor(3,56);
+    msleep(1300);
+  
+    motor(0,80);
+    motor(3,45);
+    msleep(2000);
+  
+    motor(0,90);
+    motor(3,40);
+    msleep(3500);
+  
+    motor(0,80);
+    motor(3,40);
+    msleep(2000);
+  
+    motor(0,70);
+    motor(3,74);
+    msleep(6000);
+  
+    motor(0,-70);
+    motor(3,-74);
+    msleep(4000);//back up from rock heap
+  
+    motor(0,-85);
+    motor(3,-64);
+    msleep(2200);//back to get rock
+  
+    motor(0,80);
+    motor(3,84);
+    msleep(1500);
+    return 0;
+}
