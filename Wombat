@@ -9,7 +9,7 @@ int main()
     msleep(2000);//drive foward
   
     motor(0,70);
-    motor(3,86);
+    motor(3,88);
     msleep(2200);//turn slightly
 
     motor(0,72);
@@ -21,25 +21,29 @@ int main()
     msleep(6000);//push rocks into rock heap
   
     motor(0,-10);
-    motor(3,-72);
+    motor(3,-74);
     msleep(3200);//back up from rock heap
   
     motor(0,70);
-    motor(3,77);
+    motor(3,76);
     msleep(2000);//turn toward orange poms
   
     motor(0,70);
     motor(3,74);
-    msleep(2000);
+    msleep(2000);//move toward orange poms
   
-    motor(0,40);
+    motor(0,38);
     motor(3,86);
     msleep(1200);//move toward tower with orange poms in claw
   
     motor(0,70);
-    motor(3,74);
-    msleep(1000);
-  
+    motor(3,88);
+    msleep(500);
+
+    motor(0,0);
+    motor(3,70);
+    msleep(700);//turn orange poms in more
+
     ao();
     msleep(8000);//Wait for Create to pass
   
